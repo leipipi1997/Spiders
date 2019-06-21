@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>queryDataWondow</class>
+ <widget class="QMainWindow" name="queryDataWondow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="cityLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>25</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>city:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="salaryLabel">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>salary:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="workYearLabel">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>30</y>
+      <width>65</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>workYear:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="educationLabel">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>30</y>
+      <width>65</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>education:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="comfireButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>30</y>
+      <width>50</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>comfire</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cityBox">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>55</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>北京</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>上海</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>广州</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>深圳</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>杭州</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>天津</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>西安</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>苏州</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>武汉</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>厦门</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>长沙</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>成都</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>郑州</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>重庆</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="salaryBox">
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>30</y>
+      <width>55</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>0-3K</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3K-5K</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5K-10K</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10K-20K</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>20K-50K</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>50K+</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="workYearBox">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>30</y>
+      <width>85</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>经验不限</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>应届生</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1年以内</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1-3年</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3-5年</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5-10年</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10年以上</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="educationBox">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>30</y>
+      <width>85</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>学历不限</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>高中</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>大专</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>本科</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>硕士</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>博士</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QScrollArea" name="queryResult">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>630</width>
+      <height>285</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="queryResultContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>628</width>
+       <height>283</height>
+      </rect>
+     </property>
+     <widget class="QTableWidget" name="resultTableWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>631</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>positionName</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>workYear</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>salary</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>city</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>education</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>companyShortName</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>industryField</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>financeStage</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>companySize</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>updated_at</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="exitButton">
+    <property name="geometry">
+     <rect>
+      <x>565</x>
+      <y>365</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>exit</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
