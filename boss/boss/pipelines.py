@@ -6,7 +6,7 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 from scrapy.exceptions import DropItem
-from boss.DB import dataBase
+from .DB import dataBase
 
 class PidPipeline(object):
     def __init__(self):
