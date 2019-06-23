@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QWidget, QMessageBox, QLineEdit
-from boss.DB import dataBase
+from ..DB import dataBase
 
 
 (form_class, qtbase_class) = uic.loadUiType('loginWindow.ui')
