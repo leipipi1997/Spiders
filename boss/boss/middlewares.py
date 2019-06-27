@@ -7,6 +7,8 @@
 
 from scrapy import signals
 from fake_useragent import UserAgent
+from boss.DB import DBPool
+
 
 class BossSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -54,6 +56,7 @@ class BossSpiderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+        DBPool.MySqlPool().get_conn()
 
 
 class BossDownloaderMiddleware(object):
@@ -101,6 +104,7 @@ class BossDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+        DBPool.MySqlPool().get_conn()
 
 
 class RandomUserAgentMiddleware(object):

@@ -1,4 +1,4 @@
-def changeField(result):
+def change_field(result):
     data_set = list()
     for i in result:
         data_detail = list(i)
@@ -30,29 +30,29 @@ def changeField(result):
                 salary[0] = salary[0].replace("k", "000")
                 salary[1] = salary[1].replace("k", "000")
                 if salary[1].find("薪") != -1:
-                    exSalary = salary[1].split("·")
-                    salary[1] = exSalary[0]
-                    salary.append(exSalary[1].replace("薪", ""))  # 额外的薪水
-                lowSalary = int(salary[0])
-                highSalary = int(salary[1])
+                    ex_salary = salary[1].split("·")
+                    salary[1] = ex_salary[0]
+                    salary.append(ex_salary[1].replace("薪", ""))  # 额外的薪水
+                low_salary = int(salary[0])
+                high_salary = int(salary[1])
                 if len(salary) == 3:
-                    avgSalary = round((lowSalary + highSalary) / 2 * int(salary[2]) / 12, 1)
+                    avg_salary = round((low_salary + high_salary) / 2 * int(salary[2]) / 12, 1)
                 else:
-                    avgSalary = (lowSalary + highSalary) / 2
+                    avg_salary = (low_salary + high_salary) / 2
 
-                if 0 <= avgSalary <= 3000:
+                if 0 <= avg_salary <= 3000:
                     data_detail[1] = "S1"
-                elif 3000 < avgSalary <= 5000:
+                elif 3000 < avg_salary <= 5000:
                     data_detail[1] = "S2"
-                elif 5000 < avgSalary <= 10000:
+                elif 5000 < avg_salary <= 10000:
                     data_detail[1] = "S3"
-                elif 10000 < avgSalary <= 20000:
+                elif 10000 < avg_salary <= 20000:
                     data_detail[1] = "S4"
-                elif 20000 < avgSalary <= 50000:
+                elif 20000 < avg_salary <= 50000:
                     data_detail[1] = "S5"
-                elif avgSalary > 50000:
+                elif avg_salary > 50000:
                     data_detail[1] = "S6"
-                    # print(avgSalary)
+                    # print(avg_salary)
 
                 if len(i) > 2:
                     if data_detail[2] == "北京":

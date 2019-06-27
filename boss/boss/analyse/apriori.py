@@ -1,5 +1,6 @@
-from boss.DB import dataBase
-from boss.analyse.changeField import changeField
+from boss.DB import DBPool
+from boss.analyse.changeField import change_field
+
 
 def load_data_set():
     """
@@ -7,15 +8,12 @@ def load_data_set():
     Returns:
         A data set: A list of transactions. Each transaction contains several items.
     """
-    connect = dataBase.getConnect()
-    # 通过cursor执行增删查改
-    cursor = dataBase.getCursor(connect)
+    pool = DBPool.MySqlPool()
     sql = "SELECT workYear,salary,city,education FROM boss_spider_result"
-    cursor.execute(sql)
-    result = cursor.fetchall()
-    data_set = changeField(result)
+    result = pool.query_(sql)
+    data_set = change_field(result)
 
-    connect.close()
+    pool.dispose()
     return data_set
 
 

@@ -1,34 +1,24 @@
 import matplotlib.pyplot as plt
-from boss.DB import dataBase
+from boss.DB import DBPool
 from pylab import mpl
 import wordcloud
 
-def getData():
-    connect = dataBase.getConnect()
-    cursor = dataBase.getCursor(connect)
 
+def getData():
+    pool = DBPool.MySqlPool()
     sql = "SELECT education AS education, COUNT(*) FROM boss_spider_result GROUP BY education"
     sql1 = "SELECT city AS city, COUNT(*) FROM boss_spider_result GROUP BY city"
     sql2 = "SELECT workYear AS workYear, COUNT(*) FROM boss_spider_result GROUP BY workYear"
     sql3 = "SELECT industryField FROM boss_spider_result"
     sql4 = "SELECT salary FROM boss_spider_result"
 
-    try:
-        cursor.execute(sql)
-        educationData = cursor.fetchall()
-        cursor.execute(sql1)
-        cityData = cursor.fetchall()
-        cursor.execute(sql2)
-        workYearData = cursor.fetchall()
-        cursor.execute(sql3)
-        industryData = cursor.fetchall()
-        cursor.execute(sql4)
-        salaryData = cursor.fetchall()
-    except:
-        connect.rollback()
-        connect.commit()           #出错要回滚，回滚后一定要记得提交
-    finally:
-        connect.close()
+    educationData = pool.query_(sql)
+    cityData = pool.query_(sql1)
+    workYearData = pool.query_(sql2)
+    industryData = pool.query_(sql3)
+    salaryData = pool.query_(sql4)
+
+    pool.dispose()
     return educationData, cityData, workYearData, industryData, salaryData
 
 def showView():
