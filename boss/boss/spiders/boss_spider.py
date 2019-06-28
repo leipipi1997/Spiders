@@ -2,6 +2,7 @@
 import scrapy
 from boss.items import BossItem
 import time
+import random
 
 
 class BossSpiderSpider(scrapy.Spider):
@@ -67,7 +68,8 @@ class BossSpiderSpider(scrapy.Spider):
                 boss_item['financeStage'] = "未知"
                 boss_item['companySize'] = box.xpath('.//p[1]//text()').extract()[4]
             boss_item['updated_at'] = time.strftime('%Y-%m-%d', time.localtime(time.time()))
-            time.sleep(30)       # 防止403,所以休息一秒
+            sleep_time = random.randint(20, 45)
+            time.sleep(sleep_time)       # 防止403,所以休息一秒
 
             # 将Item：boss_item传递给Spider中间件,由它进行数据清洗（去空,去重）等操作
             # 每次yield都将调用SpiderMiddleware

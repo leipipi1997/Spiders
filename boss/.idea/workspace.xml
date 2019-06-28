@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c9cd917-00c5-4d73-91de-f46796d64e48" name="Default" comment="修改了路径，修改为相对路径">
-      <change afterPath="$PROJECT_DIR$/boss/DB/DBPool.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boss/DB/dataBase.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/boss/GUI/chartViewwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/GUI/chartViewwindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boss/GUI/loginwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/GUI/loginwindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boss/GUI/mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/GUI/mainwindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boss/GUI/queryData.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/GUI/queryData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boss/GUI/queryDatawindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/GUI/queryDatawindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boss/analyse/apriori.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/analyse/apriori.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boss/analyse/changeField.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/analyse/changeField.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boss/analyse/newTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/analyse/newTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boss/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boss/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boss/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boss/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boss/spiders/boss_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/spiders/boss_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boss/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,13 +35,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boss/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="212">
+              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/boss/spiders/boss_spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="70" column="47" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,7 +70,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>应届</find>
       <find>生</find>
       <find>10年以上</find>
       <find>1</find>
@@ -102,6 +99,7 @@
       <find>Spider opened</find>
       <find>raise</find>
       <find>positionName</find>
+      <find>My</find>
     </findStrings>
     <replaceStrings>
       <replace>bossItem</replace>
@@ -144,7 +142,6 @@
         <option value="D:/python/Lib/site-packages/wordcloud/wordcloud.py" />
         <option value="$PROJECT_DIR$/boss/RandomUserAgentMiddleware.py" />
         <option value="$PROJECT_DIR$/boss/DB/dataBase.py" />
-        <option value="$PROJECT_DIR$/boss/settings.py" />
         <option value="$PROJECT_DIR$/boss/DB/DBPool.py" />
         <option value="$PROJECT_DIR$/boss/GUI/chartViewwindow.py" />
         <option value="$PROJECT_DIR$/boss/GUI/mainwindow.py" />
@@ -155,10 +152,11 @@
         <option value="$PROJECT_DIR$/boss/analyse/apriori.py" />
         <option value="$PROJECT_DIR$/boss/analyse/newTest.py" />
         <option value="$PROJECT_DIR$/boss/test.py" />
-        <option value="$PROJECT_DIR$/boss/middlewares.py" />
-        <option value="$PROJECT_DIR$/boss/spiders/boss_spider.py" />
         <option value="$PROJECT_DIR$/boss/items.py" />
         <option value="$PROJECT_DIR$/boss/pipelines.py" />
+        <option value="$PROJECT_DIR$/boss/middlewares.py" />
+        <option value="$PROJECT_DIR$/boss/settings.py" />
+        <option value="$PROJECT_DIR$/boss/spiders/boss_spider.py" />
       </list>
     </option>
   </component>
@@ -399,7 +397,7 @@
       <workItem from="1561222226634" duration="1402000" />
       <workItem from="1561270996018" duration="5142000" />
       <workItem from="1561477159714" duration="19503000" />
-      <workItem from="1561607535661" duration="11828000" />
+      <workItem from="1561607535661" duration="19295000" />
     </task>
     <task id="LOCAL-00001" summary="修改了路径，修改为相对路径">
       <created>1561271196821</created>
@@ -426,7 +424,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113461000" />
+    <option name="totallyTimeSpent" value="120928000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -440,17 +438,17 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48584202" visible="true" weight="0.26701966" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48584202" visible="true" weight="0.26701966" />
       <window_info id="Structure" order="1" sideWeight="0.48882264" weight="0.24963397" />
       <window_info id="Favorites" order="2" sideWeight="0.51415795" side_tool="true" weight="0.15959005" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32935917" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" visible="true" weight="0.39076924" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49621785" weight="0.48307693" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39846155" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32935917" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50292826" side_tool="true" weight="0.4739195" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50378215" side_tool="true" weight="0.39076924" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32923076" />
@@ -486,7 +484,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/boss$queryData.coverage" NAME="queryData Coverage Results" MODIFIED="1561651790581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss/GUI" />
     <SUITE FILE_PATH="coverage/boss$loginwindow.coverage" NAME="loginwindow Coverage Results" MODIFIED="1561652236848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss/GUI" />
-    <SUITE FILE_PATH="coverage/boss$test.coverage" NAME="test Coverage Results" MODIFIED="1561657208223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss" />
+    <SUITE FILE_PATH="coverage/boss$test.coverage" NAME="test Coverage Results" MODIFIED="1561689660470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss" />
     <SUITE FILE_PATH="coverage/boss$chartViewwindow.coverage" NAME="chartViewwindow Coverage Results" MODIFIED="1558756977616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss/GUI" />
     <SUITE FILE_PATH="coverage/boss$apriori.coverage" NAME="apriori Coverage Results" MODIFIED="1561654578066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss/analyse" />
     <SUITE FILE_PATH="coverage/boss$DBPool.coverage" NAME="DBPool Coverage Results" MODIFIED="1561485731452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss/DB" />
@@ -768,23 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boss/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boss/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="105" column="41" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="41" />
-          <folding>
-            <element signature="e#169#195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boss/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -802,22 +783,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boss/spiders/boss_spider.py">
+    <entry file="file://$PROJECT_DIR$/boss/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+        <state relative-caret-position="305">
+          <caret line="123" column="70" selection-start-line="123" selection-start-column="70" selection-end-line="123" selection-end-column="70" />
           <folding>
-            <element signature="e#24#37#0" expanded="true" />
+            <element signature="e#169#195#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boss/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="212">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss/spiders/boss_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="70" column="47" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

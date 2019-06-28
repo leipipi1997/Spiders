@@ -6,8 +6,10 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
 from fake_useragent import UserAgent
 from boss.DB import DBPool
+import random
 
 
 class BossSpiderMiddleware(object):
@@ -111,18 +113,12 @@ class RandomUserAgentMiddleware(object):
 
     # 随机更换User-Agent
 
-    def __init__(self, crawler):
-        super(RandomUserAgentMiddleware, self).__init__()
-        self.ua = UserAgent()
-        self.ua_type = crawler.settings.get('RANDOM_UA_TYPE', 'random')
+    def __init__(self, user_agent):
+        self.user_agent = user_agent
 
     @classmethod
     def from_crawler(cls, crawler):
-        return cls(crawler)
+        return cls(user_agent=crawler.settings.get('USER_AGENT'))
 
     def process_request(self, request, spider):
-
-        def get_ua():
-            return getattr(self.ua, self.ua_type)
-
-        request.headers.setdefault('User-Agent', get_ua())
+        request.headers['User-Agent'] = random.choice(self.user_agent)
