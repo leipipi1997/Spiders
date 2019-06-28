@@ -43,7 +43,6 @@ class BossSpiderSpider(scrapy.Spider):
             # 郑州
             'https://www.zhipin.com/job_detail/?query=%E5%A4%A7%E6%95%B0%E6%8D%AE&city=101040100&industry=&position=',
             # 重庆
-
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)

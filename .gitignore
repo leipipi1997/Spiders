@@ -108,4 +108,5 @@ __pycache__/
 private
 private.pub
 .idea/
+mysql_settings.py
 >>>>>>> Started project

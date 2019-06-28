@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c9cd917-00c5-4d73-91de-f46796d64e48" name="Default" comment="修改了路径，修改为相对路径">
-      <change beforePath="$PROJECT_DIR$/boss/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boss/DB/DBPool.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/DB/DBPool.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boss/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boss/spiders/boss_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/boss/spiders/boss_spider.py" afterDir="false" />
     </list>
@@ -38,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boss/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="342">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -48,13 +48,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/boss/spiders/boss_spider.py">
+        <entry file="file://$PROJECT_DIR$/boss/GUI/queryData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="70" column="47" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -142,7 +139,6 @@
         <option value="D:/python/Lib/site-packages/wordcloud/wordcloud.py" />
         <option value="$PROJECT_DIR$/boss/RandomUserAgentMiddleware.py" />
         <option value="$PROJECT_DIR$/boss/DB/dataBase.py" />
-        <option value="$PROJECT_DIR$/boss/DB/DBPool.py" />
         <option value="$PROJECT_DIR$/boss/GUI/chartViewwindow.py" />
         <option value="$PROJECT_DIR$/boss/GUI/mainwindow.py" />
         <option value="$PROJECT_DIR$/boss/GUI/loginwindow.py" />
@@ -155,8 +151,10 @@
         <option value="$PROJECT_DIR$/boss/items.py" />
         <option value="$PROJECT_DIR$/boss/pipelines.py" />
         <option value="$PROJECT_DIR$/boss/middlewares.py" />
-        <option value="$PROJECT_DIR$/boss/settings.py" />
         <option value="$PROJECT_DIR$/boss/spiders/boss_spider.py" />
+        <option value="$PROJECT_DIR$/boss/settings.py" />
+        <option value="$PROJECT_DIR$/boss/mysql_settings.py" />
+        <option value="$PROJECT_DIR$/boss/DB/DBPool.py" />
       </list>
     </option>
   </component>
@@ -189,7 +187,7 @@
               <item name="boss" type="b2602c69:ProjectViewProjectNode" />
               <item name="boss" type="462c0819:PsiDirectoryNode" />
               <item name="boss" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boss" type="b2602c69:ProjectViewProjectNode" />
@@ -232,7 +230,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.queryDatawindow">
+    <configuration name="DBPool" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="boss" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/boss/DB" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boss/DB/DBPool.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="apriori" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="boss" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -255,50 +275,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="loginwindow" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="boss" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/boss/GUI" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boss/GUI/loginwindow.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="newTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="boss" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/boss/analyse" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boss/analyse/newTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="pipelines" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="boss" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -313,6 +289,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boss/pipelines.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="queryDatawindow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="boss" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/boss/GUI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boss/GUI/queryDatawindow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -344,19 +342,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.loginwindow" />
       <item itemvalue="Python.apriori" />
-      <item itemvalue="Python.newTest" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.pipelines" />
+      <item itemvalue="Python.DBPool" />
+      <item itemvalue="Python.queryDatawindow" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.queryDatawindow" />
+        <item itemvalue="Python.DBPool" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.pipelines" />
         <item itemvalue="Python.apriori" />
-        <item itemvalue="Python.newTest" />
-        <item itemvalue="Python.loginwindow" />
       </list>
     </recent_temporary>
   </component>
@@ -398,6 +396,7 @@
       <workItem from="1561270996018" duration="5142000" />
       <workItem from="1561477159714" duration="19503000" />
       <workItem from="1561607535661" duration="19295000" />
+      <workItem from="1561708401829" duration="1971000" />
     </task>
     <task id="LOCAL-00001" summary="修改了路径，修改为相对路径">
       <created>1561271196821</created>
@@ -424,7 +423,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120928000" />
+    <option name="totallyTimeSpent" value="122899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,7 +437,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48584202" visible="true" weight="0.26701966" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48584202" visible="true" weight="0.2708018" />
       <window_info id="Structure" order="1" sideWeight="0.48882264" weight="0.24963397" />
       <window_info id="Favorites" order="2" sideWeight="0.51415795" side_tool="true" weight="0.15959005" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -487,19 +486,12 @@
     <SUITE FILE_PATH="coverage/boss$test.coverage" NAME="test Coverage Results" MODIFIED="1561689660470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss" />
     <SUITE FILE_PATH="coverage/boss$chartViewwindow.coverage" NAME="chartViewwindow Coverage Results" MODIFIED="1558756977616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss/GUI" />
     <SUITE FILE_PATH="coverage/boss$apriori.coverage" NAME="apriori Coverage Results" MODIFIED="1561654578066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss/analyse" />
-    <SUITE FILE_PATH="coverage/boss$DBPool.coverage" NAME="DBPool Coverage Results" MODIFIED="1561485731452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss/DB" />
-    <SUITE FILE_PATH="coverage/boss$queryDatawindow.coverage" NAME="queryDatawindow Coverage Results" MODIFIED="1561651353597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss/GUI" />
+    <SUITE FILE_PATH="coverage/boss$DBPool.coverage" NAME="DBPool Coverage Results" MODIFIED="1561710364924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss/DB" />
+    <SUITE FILE_PATH="coverage/boss$queryDatawindow.coverage" NAME="queryDatawindow Coverage Results" MODIFIED="1561710390518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss/GUI" />
     <SUITE FILE_PATH="coverage/boss$pipelines.coverage" NAME="pipelines Coverage Results" MODIFIED="1561656561658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss" />
     <SUITE FILE_PATH="coverage/boss$newTest.coverage" NAME="newTest Coverage Results" MODIFIED="1561654563129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/boss/analyse" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/python/Lib/abc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/python/Lib/site-packages/matplotlib/rcsetup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -718,23 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boss/GUI/queryDatawindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boss/GUI/queryData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boss/analyse/changeField.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -753,16 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boss/DB/DBPool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,28 +760,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boss/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="342">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boss/test.py">
+    <entry file="file://$PROJECT_DIR$/boss/mysql_settings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss/DB/DBPool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="76">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boss/spiders/boss_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="70" column="47" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+        <state relative-caret-position="810">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss/GUI/queryDatawindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss/GUI/queryData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
         </state>
       </provider>
     </entry>

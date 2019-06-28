@@ -1,22 +1,20 @@
 import pymysql
 import traceback
 from DBUtils.PooledDB import PooledDB
-from scrapy.utils.project import get_project_settings
+from boss import mysql_settings
 
 
 class MySqlPool(object):
 
-    connSettings = get_project_settings()
-
     config = {
-        'host': connSettings.get('MYSQL_HOST'),
-        'port': connSettings.get('MYSQL_PORT'),
-        'database': connSettings.get('MYSQL_DATABASE'),
-        'user': connSettings.get('MYSQL_USER'),
-        'password': connSettings.get('MYSQL_PASSWORD'),
-        'charset': connSettings.get('MYSQL_CHARSET'),
+        'host': mysql_settings.MYSQL_HOST,
+        'port': mysql_settings.MYSQL_PORT,
+        'database': mysql_settings.MYSQL_DATABASE,
+        'user': mysql_settings.MYSQL_USER,
+        'password': mysql_settings.MYSQL_PASSWORD,
+        'charset': mysql_settings.MYSQL_CHARSET,
     }
-
+    print(config)
     _pool = None
 
     def __init__(self):
@@ -61,3 +59,7 @@ class MySqlPool(object):
     def dispose(self):
         self._cursor.close()
         self._conn.close()
+
+
+if __name__ == '__main__':
+    MySqlPool()
