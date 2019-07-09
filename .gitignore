@@ -109,4 +109,6 @@ private
 private.pub
 .idea/
 mysql_settings.py
+alive.txt
+proxy.txt
 >>>>>>> Started project

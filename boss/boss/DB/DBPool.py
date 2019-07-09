@@ -14,7 +14,6 @@ class MySqlPool(object):
         'password': mysql_settings.MYSQL_PASSWORD,
         'charset': mysql_settings.MYSQL_CHARSET,
     }
-    print(config)
     _pool = None
 
     def __init__(self):

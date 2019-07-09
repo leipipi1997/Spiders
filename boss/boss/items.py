@@ -24,3 +24,4 @@ class BossItem(scrapy.Item):
     financeStage = scrapy.Field()       # 融资规模
     companySize = scrapy.Field()        # 公司规模
     updated_at = scrapy.Field()         # 职位的更新时间（设置为爬取当日）
+    detail_content = scrapy.Field()     # 职位的详情页中的职位描述信息

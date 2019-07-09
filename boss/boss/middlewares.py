@@ -6,7 +6,6 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
-from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
 from fake_useragent import UserAgent
 from boss.DB import DBPool
 import random
@@ -109,16 +108,41 @@ class BossDownloaderMiddleware(object):
         DBPool.MySqlPool().get_conn()
 
 
-class RandomUserAgentMiddleware(object):
-
-    # 随机更换User-Agent
-
-    def __init__(self, user_agent):
-        self.user_agent = user_agent
+class RandomUserAgentMiddleware(object):    # 随机更换User-Agent
+    def __init__(self):
+        self.user_agent = UserAgent()
+        self.headers = {
+            "authority": "www.zhipin.com",
+            "method": "GET",
+            "scheme": "https",
+            "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,"
+                      "image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
+            "accept-encoding": "gzip,deflate,br",
+            "accept-language": "en-US,en;q=0.9",
+            "cache-control": "max-age=0",
+            "upgrade-insecure-requests": "1",
+            "user-agent": "Mozilla/5.0(WindowsNT 10.0; Win64; x64)AppleWebKit"
+                          "/537.36(KHTML,like Gecko)Chrome/75.0 .3770100Safari/537.36"
+        }
 
     @classmethod
     def from_crawler(cls, crawler):
-        return cls(user_agent=crawler.settings.get('USER_AGENT'))
+        return cls()
 
     def process_request(self, request, spider):
-        request.headers['User-Agent'] = random.choice(self.user_agent)
+        request.headers.setdefault('user-agent', self.user_agent.random)
+
+
+class MyProxiesSpiderMiddleware(object):
+
+    def __init__(self, ip=''):
+        self.ip = ip
+        with open('E:\\Spiders\\boss\\boss\\proxy\\alive.txt', 'r') as fp:
+            self.AllIP = fp.readlines()
+        self.IPPOOL = self.AllIP
+
+    def process_request(self, request, spider):
+        this_ip = random.choice(self.IPPOOL)
+        print("this ip is:%s" %this_ip)
+        # request.headers.setdefault(self.headers)
+        request.meta["proxy"] = "https://" + this_ip

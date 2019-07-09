@@ -48,11 +48,11 @@ class BossSpiderSpider(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
-        boss_item = BossItem()
-
         # 利用xpath筛选想要爬取的数据
         for box in response.xpath('//div[@class="job-primary"]'):
+            boss_item = BossItem()
             boss_item['pid'] = box.xpath('.//a[@data-jobid]/@data-jobid').extract()[0]
+            # position_detail_url = box.xpath('.//a[@data-jobid]/@href').extract()[0]
             boss_item['positionName'] = box.xpath('.//div[@class="job-title"]/text()').extract()[0]
             boss_item['salary'] = box.xpath('.//span[@class="red"]/text()').extract()[0]
             boss_item['city'] = box.xpath('.//p[1]/text()').extract()[0]
@@ -67,15 +67,23 @@ class BossSpiderSpider(scrapy.Spider):
                 boss_item['financeStage'] = "未知"
                 boss_item['companySize'] = box.xpath('.//p[1]//text()').extract()[4]
             boss_item['updated_at'] = time.strftime('%Y-%m-%d', time.localtime(time.time()))
-            sleep_time = random.randint(20, 45)
-            time.sleep(sleep_time)       # 防止403,所以休息一秒
-
             # 将Item：boss_item传递给Spider中间件,由它进行数据清洗（去空,去重）等操作
             # 每次yield都将调用SpiderMiddleware
+            # position_detail_url = response.urljoin(position_detail_url)
+            # yield scrapy.Request(position_detail_url, meta={'boss_item': boss_item},
+            #                      callback=self.detail_parse, priority=10)
             yield boss_item
+        time.sleep(random.randint(30, 55))
 
-            # 分页
+        # 分页
         url = response.xpath('//div[@class="page"]//a[@class="next"]/@href').extract()
-        if url:
-            url = url[0]
-            yield scrapy.Request("https://www.zhipin.com" + url, callback=self.parse)
+        if len(url) != 0 and url[0] != 'javascript:;':
+            url = response.urljoin(url[0])
+            yield scrapy.Request(url, callback=self.parse)
+
+    def detail_parse(self, response):
+        boss_item = response.meta['boss_item']
+        boss_item['detail_content'] = response.xpath('string(//div[@class="detail-content"]//div[@class="job-sec"]//'
+                                                     'h3[contains(text(),"职位描述")]/../'
+                                                     'div[@class="text"])').extract()[0].strip()
+        yield boss_item
